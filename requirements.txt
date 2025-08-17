@@ -1,3 +1,4 @@
 # requirements.txt
-snowflake-snowpark-python
-streamlit
+streamlit>=1.37.0
+snowflake-snowpark-python>=1.20.0
+
