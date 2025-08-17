@@ -12,7 +12,7 @@ st.write("The name on your Smoothie will be:", name_on_order)
 # Conexión Snowflake
 cnx = st.connection("snowflake")
 session = cnx.session()
-my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
+my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'),col('SEARCH_ON'))
 
 # Convertir a lista para el multiselect
 fruit_names = my_dataframe.to_pandas()['FRUIT_NAME'].tolist()
