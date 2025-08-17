@@ -18,8 +18,8 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 #st.stop()
 
 pd_df=my_dataframe.to_pandas()
-st.dataframe(pd_df)
-st.stop()
+#st.dataframe(pd_df)
+#st.stop()
 
 # Convertir a lista para el multiselect
 fruit_names = my_dataframe.to_pandas()['FRUIT_NAME'].tolist()
